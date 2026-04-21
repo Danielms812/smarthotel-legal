@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Smart Hotels</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+                   Helvetica, Arial, sans-serif;
+      background: #f5f5f7;
+      color: #1d1d1f;
+      margin: 0;
+      padding: 2rem 1rem 4rem;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 2.5rem 3rem;
+      box-shadow: 0 2px 20px rgba(0,0,0,.08);
+    }
+
+    .lang-switcher {
+      text-align: right;
+      margin-bottom: 1.5rem;
+      font-size: .9rem;
+    }
+    .lang-switcher a {
+      text-decoration: none;
+      color: #0071e3;
+      font-weight: 500;
+    }
+    .lang-switcher a:hover { text-decoration: underline; }
+
+    .app-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .app-icon {
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      flex-shrink: 0;
+    }
+    .app-title h1 {
+      margin: 0 0 .2rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    .app-title .subtitle {
+      font-size: .9rem;
+      color: #6e6e73;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 2rem 0 .5rem;
+      color: #1d1d1f;
+    }
+
+    p { margin: .5rem 0 1rem; color: #3a3a3c; }
+
+    ul {
+      padding-left: 1.4rem;
+      margin: .5rem 0 1rem;
+      color: #3a3a3c;
+    }
+    ul li { margin-bottom: .4rem; }
+
+    .badge {
+      display: inline-block;
+      background: #f2f2f7;
+      border-radius: 6px;
+      padding: .15rem .5rem;
+      font-size: .82rem;
+      font-weight: 600;
+      color: #3a3a3c;
+      margin-right: .3rem;
+      white-space: nowrap;
+    }
+    .badge.orange { background: #ffedd5; color: #9a3412; }
+
+    .permission-item {
+      border-left: 3px solid #e5e5e5;
+      padding-left: 1rem;
+      margin-bottom: 1rem;
+    }
+    .permission-item strong { color: #1d1d1f; }
+
+    .third-party-box {
+      background: #fff8f0;
+      border: 1px solid #fde8c8;
+      border-radius: 10px;
+      padding: 1rem 1.2rem;
+      margin: 1rem 0;
+    }
+    .third-party-box p { margin: 0; font-size: .92rem; }
+
+    footer {
+      text-align: center;
+      font-size: .82rem;
+      color: #6e6e73;
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #e5e5e5;
+    }
+    footer a { color: #0071e3; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="lang-switcher">
+      <a href="index.html">🇪🇸 Español</a>
+    </div>
+
+    <div class="app-header">
+      <div class="app-icon">🛏️</div>
+      <div class="app-title">
+        <h1>Privacy Policy</h1>
+        <span class="subtitle">Smart Hotels — Last updated: April 21, 2026</span>
+      </div>
+    </div>
+
+    <!-- 1 -->
+    <h2>1. Introduction</h2>
+    <p>
+      <strong>Smart Hotels</strong> is a mobile application developed by
+      Daniel Martínez Salinas (Nexo Technologies) that enables hotel staff to
+      intelligently control motorized smart beds via Bluetooth Low Energy (BLE)
+      and local-network communication with a control hub.
+    </p>
+    <p>
+      This privacy policy describes how the application handles user information.
+      We are committed to protecting your privacy and being transparent about
+      data practices.
+    </p>
+
+    <!-- 2 -->
+    <h2>2. Data We Collect</h2>
+    <p>
+      Smart Hotels is designed with an <strong>offline-first</strong> approach.
+      Day-to-day operation requires no Internet connection and does not actively
+      collect personal data. Specifically:
+    </p>
+    <ul>
+      <li>No personal user accounts are created.</li>
+      <li>No personally identifiable information is collected (name, email, phone number, etc.).</li>
+      <li>No analytics or advertising services are used.</li>
+      <li>No user-behaviour tracking is performed.</li>
+    </ul>
+    <p>
+      The only interaction with an external service is the delivery of
+      <strong>push notifications</strong> via Firebase Cloud Messaging (Google),
+      described in section 5.
+    </p>
+
+    <!-- 3 -->
+    <h2>3. Information Stored Locally</h2>
+    <p>
+      The application stores the following information exclusively on your device:
+    </p>
+    <ul>
+      <li>
+        <strong>Hub configuration:</strong> the IP address and access credentials
+        for the local control hub (Raspberry Pi), stored in encrypted form using
+        the operating system's secure storage.
+      </li>
+      <li>
+        <strong>Paired bed identifiers:</strong> the Bluetooth MAC address of
+        each managed bed.
+      </li>
+      <li>
+        <strong>Application preferences:</strong> interface settings and usage
+        configuration stored locally.
+      </li>
+    </ul>
+    <p>
+      This data is stored only on the device and is never sent to any external
+      server. Uninstalling the application automatically deletes all this data.
+    </p>
+
+    <!-- 4 -->
+    <h2>4. Device Permissions</h2>
+    <p>Smart Hotels requests the following permissions:</p>
+
+    <div class="permission-item">
+      <strong>🔵 Bluetooth</strong><br/>
+      Required to scan for and connect to smart beds. Communication is direct
+      between the device and the bed (BLE), with no external intermediaries.
+      It is not used to track the user's location.
+    </div>
+
+    <div class="permission-item">
+      <strong>📍 Location</strong><br/>
+      On Android, the operating system requires the location permission in order
+      to perform Bluetooth scans. The application does <em>not</em> use or store
+      the user's geographic location. On iOS, BLE proximity is used solely to
+      detect nearby beds.
+    </div>
+
+    <div class="permission-item">
+      <strong>🎤 Microphone and Speech Recognition</strong><br/>
+      Used exclusively for the voice command feature ("raise", "lower", "stop").
+      Recognition is performed locally on the device. No audio is recorded or
+      transmitted to external servers.
+    </div>
+
+    <div class="permission-item">
+      <strong>🌐 Local Network and Internet</strong><br/>
+      The app requires access to the local network (Wi-Fi) to communicate with
+      the bed control hub (Raspberry Pi). Internet connectivity is used solely
+      for delivering push notifications via Firebase and, in future versions,
+      for hotel-cloud synchronisation.
+    </div>
+
+    <div class="permission-item">
+      <strong>🔔 Notifications</strong><br/>
+      The app may receive push notifications sent by the hotel hub (e.g., bed
+      status alerts). Explicit permission is requested before activating them.
+    </div>
+
+    <!-- 5 -->
+    <h2>5. Third-Party Services</h2>
+    <p>
+      Smart Hotels uses the following third-party service:
+    </p>
+
+    <div class="third-party-box">
+      <p>
+        <span class="badge orange">Google / Firebase</span>
+        <strong>Firebase Cloud Messaging (FCM)</strong> — Used to deliver push
+        notifications to the device. To do so, Google registers a
+        <em>device token</em> (an anonymous identifier) on its servers. No
+        personal data is sent. Google's privacy policy:
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">
+          policies.google.com/privacy
+        </a>.
+      </p>
+    </div>
+
+    <p>
+      The application does not contain advertising SDKs, third-party analytics,
+      or social media SDKs.
+    </p>
+
+    <!-- 6 -->
+    <h2>6. Security</h2>
+    <p>
+      We take measures to protect the information managed by the application:
+    </p>
+    <ul>
+      <li>Hub credentials are stored encrypted using the operating system's
+          secure storage (Keychain on iOS, Keystore on Android).</li>
+      <li>Bluetooth communication uses the standard BLE security mechanisms of
+          the protocol.</li>
+      <li>Communication with the hub on the local network can be configured with
+          authentication.</li>
+      <li>No personal data is collected or transmitted to external servers,
+          minimising exposure risks.</li>
+    </ul>
+
+    <!-- 7 -->
+    <h2>7. Children's Privacy</h2>
+    <p>
+      Smart Hotels is a professional application intended for hotel staff. It is
+      not directed at children under 16 and does not knowingly collect
+      information from minors. The application controls motorised equipment and
+      must be used by authorised adult personnel only.
+    </p>
+
+    <!-- 8 -->
+    <h2>8. Changes to This Policy</h2>
+    <p>
+      We may update this privacy policy from time to time. We will notify you
+      of any changes by posting the new policy on this page with the
+      corresponding update date. Continued use of the application after changes
+      are published constitutes acceptance of the updated policy.
+    </p>
+
+    <!-- 9 -->
+    <h2>9. Contact Us</h2>
+    <p>
+      If you have questions about this privacy policy, you can reach us at:
+    </p>
+    <p>
+      <strong>Daniel Martínez Salinas</strong> — Nexo Technologies<br/>
+      Email: <a href="mailto:support@nexotechnologies.es">support@nexotechnologies.es</a>
+    </p>
+
+    <footer>
+      © 2026 Daniel Martínez Salinas · Smart Hotels App ·
+      <a href="index.html">Versión en español</a>
+    </footer>
+
+  </div>
+</body>
+</html>
