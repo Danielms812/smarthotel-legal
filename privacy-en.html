@@ -219,7 +219,11 @@
       <strong>🎤 Microphone and Speech Recognition</strong><br/>
       Used exclusively for the voice command feature ("raise", "lower", "stop").
       Recognition is performed locally on the device. No audio is recorded or
-      transmitted to external servers.
+      transmitted to external servers. On Android, if the user turns on
+      hands-free mode, the app also listens with the screen off while showing a
+      persistent notification from which it can be stopped; for this it
+      downloads a public speech model (Vosk) once, without sending any user
+      data.
     </div>
 
     <div class="permission-item">
